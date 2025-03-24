@@ -1,8 +1,9 @@
 #PR_6.1
 
 #1. Создаем файл для тестирования
-#!/bin/bash
-   using System;
+
+```
+ using System;
 namespace BankAccountNS
 {
     /// <summary>
@@ -78,9 +79,9 @@ namespace BankAccountNS
         }
     }
 }
-
+```
 #2.Создаем еще один файл, который нужен для создания теста
-#!/bin/bash
+```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -108,12 +109,12 @@ namespace BankTests
         }
     }
 }
-
+```
 #3. Запускаем и выходит ошибка
 ![scrin1](https://github.com/user-attachments/assets/930eb45c-f3e6-46a5-832e-0286b2025e4a)
 #4. Исправляем ошибку в предудыщем файле и запускаем заново
 Код:
-#!/bin/bash
+```
 using System;
 
 namespace BankAccountNS
@@ -191,12 +192,12 @@ namespace BankAccountNS
         }
     }
 }
-
+```
 Результат
 ![scrin2](https://github.com/user-attachments/assets/90779d81-4a53-4db9-a111-23946224cc00)
 
 #5. Добавляем новый метод:
-#!/bin/bash
+```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -232,12 +233,13 @@ namespace BankTests
         }
     }
 }
+```
 Результат:
 ![image](https://github.com/user-attachments/assets/c9cc59a1-bae5-4872-a25d-8d712c3bbe05)
 
 #6 Производим рефакторинг кода метода Debit:
 BankAccount:
-#!/bin/bash
+```
 public void Debit(double amount)
 {
     if (amount > m_balance)
@@ -252,8 +254,9 @@ public void Debit(double amount)
 
     m_balance -= amount;
 }
+```
 BankAccountTests:
-#!/bin/bash
+```
 [TestMethod]
 public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 {
@@ -276,11 +279,12 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
     Assert.Fail("The expected exception was not thrown.");
 }
+```
 Результат:
 Тест показал положительный резултат
 
 #7. Производим Credit:
-#!/bin/bash
+```
  public void Credit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
  {
      // Arrange
@@ -291,6 +295,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
      // Act and assert
      Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Credit(creditAmount));
  }
+```
 Результат:
 Тест показал положительный результат
 ![Снимок экрана 2025-03-24 141910](https://github.com/user-attachments/assets/8ab725bb-3a8b-471d-b53a-abbdb382f1c0)
