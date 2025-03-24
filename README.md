@@ -194,7 +194,7 @@ namespace BankAccountNS
 }
 
  Результат
-<a href="https://ja.ru">
+<a href="https://ya.ru">
     <img src="C:\Users\rdiny\OneDrive\Изображения\Screenshots\scrin2.png" alt="Описание изображения">
 </a>
 #5. Добавляем новый метод:
