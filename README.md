@@ -194,7 +194,7 @@ namespace BankAccountNS
 }
 
  Результат
- ![Softmax](C:\Users\rdiny\OneDrive\Изображения\Screenshots\scrin2.png)  
+<img src="C:\Users\rdiny\OneDrive\Изображения\Screenshots\scrin2.png">
 #5. Добавляем новый метод:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
