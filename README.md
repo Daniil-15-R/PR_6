@@ -110,8 +110,7 @@ namespace BankTests
 }
 
 #3. Запускаем и выходит ошибка
-Все флажки загорелись красными крестиками
-
+![scrin1](https://github.com/user-attachments/assets/930eb45c-f3e6-46a5-832e-0286b2025e4a)
 #4. Исправляем ошибку в предудыщем файле и запускаем заново
 Код:
 using System;
@@ -194,8 +193,7 @@ namespace BankAccountNS
 }
 
 Результат
-[![Softmax](./resources/softmax.webp)](https://gitverse.ru/new_horizons/NeuralNetworks/content/master/articles/article2)
-
+![scrin2](https://github.com/user-attachments/assets/90779d81-4a53-4db9-a111-23946224cc00)
 #5. Добавляем новый метод:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -233,8 +231,7 @@ namespace BankTests
     }
 }
 Результат:
-Все флажки зеленые
-
+![scrin2](https://github.com/user-attachments/assets/c15f8d08-222f-446d-b8b6-a6b12832df9d)
 #6 Производим рефакторинг кода метода Debit:
 BankAccount:
 public void Debit(double amount)
@@ -290,3 +287,4 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
  }
 Результат:
 Тест показал положительный результат
+![Снимок экрана 2025-03-24 141910](https://github.com/user-attachments/assets/8ab725bb-3a8b-471d-b53a-abbdb382f1c0)
