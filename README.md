@@ -194,7 +194,7 @@ namespace BankAccountNS
 }
 
 Результат
-![Положительный результат](C:/Users/rdiny/OneDrive/Изображения/Screenshots/scrin2.png)
+[![Softmax](./resources/softmax.webp)](https://gitverse.ru/new_horizons/NeuralNetworks/content/master/articles/article2)
 
 #5. Добавляем новый метод:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
