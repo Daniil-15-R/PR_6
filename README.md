@@ -194,6 +194,7 @@ namespace BankAccountNS
 
 Результат
 ![scrin2](https://github.com/user-attachments/assets/90779d81-4a53-4db9-a111-23946224cc00)
+
 #5. Добавляем новый метод:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -231,7 +232,8 @@ namespace BankTests
     }
 }
 Результат:
-![scrin2](https://github.com/user-attachments/assets/c15f8d08-222f-446d-b8b6-a6b12832df9d)
+![image](https://github.com/user-attachments/assets/c9cc59a1-bae5-4872-a25d-8d712c3bbe05)
+
 #6 Производим рефакторинг кода метода Debit:
 BankAccount:
 public void Debit(double amount)
