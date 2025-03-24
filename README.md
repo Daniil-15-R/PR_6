@@ -194,7 +194,9 @@ namespace BankAccountNS
 }
 
  Результат
-<img src="C:\Users\rdiny\OneDrive\Изображения\Screenshots\scrin2.png">
+<a href="https://www.example.com">
+    <img src="C:\Users\rdiny\OneDrive\Изображения\Screenshots\scrin2.png" alt="Описание изображения">
+</a>
 #5. Добавляем новый метод:
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
