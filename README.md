@@ -1,9 +1,8 @@
 #PR_6.1
 
 #1. Создаем файл для тестирования
+#!/bin/bash
    using System;
-
-
 namespace BankAccountNS
 {
     /// <summary>
@@ -81,6 +80,7 @@ namespace BankAccountNS
 }
 
 #2.Создаем еще один файл, который нужен для создания теста
+#!/bin/bash
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -113,8 +113,8 @@ namespace BankTests
 ![scrin1](https://github.com/user-attachments/assets/930eb45c-f3e6-46a5-832e-0286b2025e4a)
 #4. Исправляем ошибку в предудыщем файле и запускаем заново
 Код:
+#!/bin/bash
 using System;
-
 
 namespace BankAccountNS
 {
@@ -196,6 +196,7 @@ namespace BankAccountNS
 ![scrin2](https://github.com/user-attachments/assets/90779d81-4a53-4db9-a111-23946224cc00)
 
 #5. Добавляем новый метод:
+#!/bin/bash
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -236,6 +237,7 @@ namespace BankTests
 
 #6 Производим рефакторинг кода метода Debit:
 BankAccount:
+#!/bin/bash
 public void Debit(double amount)
 {
     if (amount > m_balance)
@@ -251,6 +253,7 @@ public void Debit(double amount)
     m_balance -= amount;
 }
 BankAccountTests:
+#!/bin/bash
 [TestMethod]
 public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 {
@@ -277,6 +280,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 Тест показал положительный резултат
 
 #7. Производим Credit:
+#!/bin/bash
  public void Credit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
  {
      // Arrange
